@@ -46,15 +46,56 @@
             <div class="backdrop is-hidden" data-modal>
               <div class="modal">
                 <b>Оставьте свои данные, мы вам перезвоним</b>
-                <form action="" class="general-form">
+                <form action="#" class="general-form">
                   <div class="name-form"> 
                     <label for="name">Имя</label>
-                    <input id="name" type="text" name="name" />
+                    <div class="input-block">
+                      <input class="data" id="name" type="text" name="name" />
+                      <svg class="icon-input" width="18px" height="18px">
+                      <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                    </div>
                   </div>
-                  
+                  <div class="name-form"> 
+                    <label for="tel">Телефон</label>
+                    <div class="input-block">
+                      <input class="data" id="tel" type="tel" name="tel" />
+                      <svg class="icon-input" width="18px" height="18px">
+                      <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                    </div>
+                  </div>
+                  <div class="name-form"> 
+                    <label for="email">Почта</label>
+                    <div class="input-block">
+                      <input class="data" id="email" type="email" name="email" />
+                      <svg class="icon-input" width="18px" height="18px">
+                      <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                    </div>
+                  </div>
+                  <div class="name-form">
+                    <label  for="commit">Комментарий</label>
+                    <textarea class="data area"
+                    name="comment"
+                    rows="7"
+                    placeholder="Оставьте комментарий"
+                    id="commit"></textarea>
+                  </div>
+                  <p class="conditions">
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a href="">Условия договора</a>
+                  </p>
+                  <button class="form-btn">
+                    Отправить
+                  </button>
 
                 </form>
                 <button class="exit-btn" data-modal-close>
+                  <svg class="icon" width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-close-black">
+                    </use>
+                  </svg>
                 </button>
               </div>
             </div>
