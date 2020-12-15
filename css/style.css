@@ -949,7 +949,8 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.galery .item:hover .description {
+.galery .link:hover .description,
+.galery .link:focus .description {
   transform: translateY(0);
 }
 
